@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 0.4fr 1.7fr 1.5fr;
+  grid-template-rows: 1.2fr 4fr 4fr 1fr;
+  grid-template-areas: "logo header nav" " pic pic context" "pic pic context" "munch munch munch";
+  height: 125vh;
+  margin: 2.5em;
+}
+
+section.nav{
+ grid-area:nav;
+ background: #70684f;
+}
+
+section.pic {
+  grid-area: pic;
+  background: #ffffff;
+}
+
+section.logo {
+  grid-area: logo;
+  background: #9d3bb8;
+}
+
+section.munch {
+  grid-area: munch;
+  background: #c965ba;
+}
+
+section.header {
+  grid-area: header;
+  background: #7bf32g;
+}
+
+section.context {
+  grid-area: context;
+  background: #2d6acc;
